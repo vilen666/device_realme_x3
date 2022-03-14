@@ -21,15 +21,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/realme/x3/device.mk)
 
-ifneq ($(VANILLA_BUILD),true)
-# Inherit from goolag
-$(call inherit-product, vendor/google/gms/config.mk)
-$(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/gprivate/gprivate.mk)
-$(call inherit-product, vendor/partner_modules/build/mainline_modules_s_flatten_apex.mk)
-else
-$(warning Building vanilla)
-endif
+# Inherit some common PixelPlus-UI stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+WITH_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1440
+
+# PE Stuff
+#CUSTOM_BUILD_TYPE := OFFICIAL
+IS_PHONE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP  := true
 
 # Device identifier
 PRODUCT_NAME := aosp_x3
