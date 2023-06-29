@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  /* font-size: 1.2vw; */
+  font-size: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#top {
+    width: 100%;
+    height: 20px;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    border: 0px;
+    background-color: rgb(0, 0, 99);
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        display: flex;
+        background-color: rgba(245, 245, 220, 0.63);
+        align-items: center;
+        box-shadow: inset 1px 1px 4px 1px rgb(48, 44, 44);
+        /* border: 2px solid black; */
+        height: fit-content;
+        /* min-height: 5vh;
+        max-height: 26vh; */
+      }
+      #icon {
+        /* background-color: aquamarine; */
+        /* width: 18%; */
+        width: 360px;
+      }
+      #icon img {
+        width: 50%;
+        margin-top: 4%;
+        cursor: pointer;
+      }
+      #icon div {
+        margin-top: 0%;
+        margin-left: 41%;
+        /* width: 60%; */
+        font-style: italic;
+        font-weight: bold;
+      }
+      #but {
+        display: none;
+      }
+      #menu
+      {
+        position: relative;
+        right: 10%;
+        /* top: 10px; */
+        /* background-color: aqua; */
+        align-items: center;
+        margin: 5px;
+      }
+      #drop
+      {
+        width: fit-content;
+        padding: 5px;
+        top: 50px;
+        
+      }
+      #drop li
+      {
+        text-align: center;
+        width: 98px;
+        display: none;
+        padding: 5px;
+        border: 1px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        list-style: none;
+        background-color: rgb(13, 152, 187);
+        cursor: pointer;
+      }
+      #men
+      {
+        display: block !important;
+        /* position: fixed; */
+        margin-bottom: 2px;
+        background-color:  none !important;
+        border-radius: 6px;
+        color: aliceblue;
+        background-color: rgb(0, 0, 99) !important;
+      }
+      #drop li:hover
+      {
+        background-color: rgb(125, 125, 235) !important;
+        color: azure;
+      }
+      
+}
+@media (min-width: 501px) {
+  .navbar {
+    display: flex;
+    background-color: rgba(245, 245, 220, 0.63);
+    align-items: center;
+    box-shadow: inset 1px 1px 4px 1px rgb(48, 44, 44);
+    /* border: 2px solid black; */
+    /* height: 5px; */
+    /* min-height: 5vh;
+    max-height: 26vh; */
+  }
+  #drop 
+  {
+    display: none;
+  }
+  #icon {
+    /* background-color: aquamarine; */
+    /* width: 18%; */
+    width: 360px;
+  }
+  #icon img {
+    width: 50%;
+    margin-top: 4%;
+    cursor: pointer;
+  }
+  #icon div {
+    margin-top: 0%;
+    margin-left: 41%;
+    /* width: 60%; */
+    font-style: italic;
+    font-weight: bold;
+  }
+  #but {
+    right: 2rem;
+    position: relative;
+    display: flex;
+    width: auto;
+    /* background-color: beige; */
+    margin-left: auto;
+    /* border: solid black; */
+    align-items: center;
+  }
+  #but div {
+    cursor: pointer;
+
+    /* border: solid black ; */
+    text-align: center;
+    width: 50pxt;
+    height: 60%;
+    margin: 1rem;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  #but div:hover {
+    background-color: rgb(125, 125, 235);
+    color: antiquewhite;
+  }
+  #icon img:hover {
+    border: rgb(125, 125, 235) solid 2px;
+  }
+}
+#about
+{
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+#header{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+#header .close{
+  position: sticky;
+  top:0px;
+  color: white;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px ;
+  border-radius: 5px;
+  border-radius: 3px;
+  background-color: rgba(5, 5, 99, 0.897);
+  cursor: pointer;
+}
+#auh
+{
+  margin-left: auto;
+  font-size: larger;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(5, 5, 99, 0.897) ;
+}
+.content
+{
+  align-items: center;
+  font-style: italic;
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+}
+#about .content div{
+  width: 70%;
+  margin: auto;
+  padding-top: 10%;
+}
